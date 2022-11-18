@@ -1,4 +1,4 @@
-## Supported Kubernetes Distributuions 
+## Supported Kubernetes Distributions 
 ![support matrix](./assets/img/support_matrix.png)
 
 ## KWasm Operator Quickstart
