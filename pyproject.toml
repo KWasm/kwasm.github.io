@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "kwasm-docs"
+version = "0.1.0"
+description = "Docs for kwasm"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "kwasm_docs"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+mkdocs = "^1.4.2"
+mkdocs-material = "^8.5.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,23 @@
+site_name: Kwasm
+theme:
+  name: material 
+  features:
+    - content.tabs.link
+
+
+  markdown_extensions:
+    - toc:
+      permalink: "¶"
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.snippets
+
+repo_url: https://github.com/KWasm/kwasm-operator
+
+
