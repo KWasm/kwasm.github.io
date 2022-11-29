@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "kwasm-docs"
 version = "0.1.0"
-description = "Docs for kwasm"
+description = "Docs for Kwasm Operator"
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 packages = [{include = "kwasm_docs"}]
