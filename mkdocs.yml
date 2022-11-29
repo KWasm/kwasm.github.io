@@ -1,13 +1,27 @@
 site_name: Kwasm
 theme:
   name: material 
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
   features:
     - content.tabs.link
-
+  icon:
+    repo: fontawesome/brands/github
 
   markdown_extensions:
     - toc:
       permalink: "¶"
+
+edit_uri: https://github.com/KWasm/kwasm.github.io/docs/
+repo_url: https://github.com/KWasm/kwasm-operator
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/LiquidReply
+      name: Liquid Reply on Twitter
+
+copyright: OSS with ❤️ by Liquid Reply
 
 markdown_extensions:
   - pymdownx.superfences
@@ -18,6 +32,5 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.snippets
 
-repo_url: https://github.com/KWasm/kwasm-operator
 
 
