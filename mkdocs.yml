@@ -7,6 +7,8 @@ theme:
     - content.tabs.link
   icon:
     repo: fontawesome/brands/github
+  palette:
+    primary: deep purple
 
   markdown_extensions:
     - toc:
@@ -21,7 +23,11 @@ extra:
       link: https://twitter.com/LiquidReply
       name: Liquid Reply on Twitter
 
-copyright: OSS with ❤️ by Liquid Reply
+# Modify the header color to match the Liquid's brand color
+extra_css:
+  - stylesheets/extra.css
+
+copyright: Liquid Reply ❤️ Open Source
 
 markdown_extensions:
   - pymdownx.superfences
@@ -31,6 +37,3 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.snippets
-
-
-

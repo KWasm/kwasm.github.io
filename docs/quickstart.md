@@ -122,7 +122,7 @@ Depending on the wasm runtime you want to use the following configuration needs 
     ``` 
 
 === "Spin"
-    After installing KWasm, start with step 3 of containerd-wasm-shims using-a-shim-in-kubernetes
+    After installing KWasm, start with step 3 of containerd-wasm-shims [using-a-shim-in-kubernetes](https://github.com/deislabs/containerd-wasm-shims#using-a-shim-in-kubernetes)
 
     ```bash
     echo 'apiVersion: node.k8s.io/v1                                           
