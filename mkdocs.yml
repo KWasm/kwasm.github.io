@@ -1,0 +1,38 @@
+site_name: Kwasm
+theme:
+  name: material 
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  features:
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: deep purple
+
+  markdown_extensions:
+    - toc:
+      permalink: "¶"
+
+edit_uri: https://github.com/KWasm/kwasm.github.io/docs/
+repo_url: https://github.com/KWasm/kwasm-operator
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/LiquidReply
+      name: Liquid Reply on Twitter
+
+# Modify the header color to match the Liquid's brand color
+extra_css:
+  - stylesheets/extra.css
+
+copyright: Liquid Reply ❤️ Open Source
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
