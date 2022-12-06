@@ -1,5 +1,5 @@
 ## Supported Kubernetes Distributions 
-![support matrix](./assets/img/support_matrix.png)
+![support matrix](./assets/images/support_matrix.png)
 
 ## KWasm Operator Quickstart
 <ul class="tab" data-tab="1e081df9-bdc6-4e81-8552-aa0a915568e9" data-name="install">
