@@ -156,5 +156,3 @@ Depending on the wasm runtime you want to use the following configuration needs 
     kubectl port-forward deployment/wasm-spin 8000:80
     curl localhost:8000/hello
     ```
-
-
