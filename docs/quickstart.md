@@ -125,13 +125,15 @@ Depending on the wasm runtime you want to use the following configuration needs 
     After installing KWasm, start with step 3 of containerd-wasm-shims [using-a-shim-in-kubernetes](https://github.com/deislabs/containerd-wasm-shims#using-a-shim-in-kubernetes)
 
     ```bash
-    echo 'apiVersion: node.k8s.io/v1                                           
+    echo '
+      apiVersion: node.k8s.io/v1                                           
       kind: RuntimeClass
       metadata:
         name: wasmtime-spin
       handler: spin' | kubectl apply -f -
 
-    echo 'apiVersion: apps/v1                                                  
+    echo '
+      apiVersion: apps/v1                                                  
       kind: Deployment
       metadata:
         name: wasm-spin
