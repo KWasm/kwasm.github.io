@@ -51,24 +51,26 @@ The following configuration include the instruction to create a fresh cluster in
 
 === "AWS EKS"
     ```bash
-    eksctl create cluster --name wasm-eks --node-type=t3.medium --without-nodegroup --version=1.23
+    eksctl create cluster --name kwasm --node-type=t3.medium --without-nodegroup --version=1.24
 
     # ATENTION, you need to choose the right region and ami
     # Look up the appropriate ami for your region: https://cloud-images.ubuntu.com/locator/ec2/
     echo 'apiVersion: eksctl.io/v1alpha5
     kind: ClusterConfig
     metadata:
-      name: wasm-eks
+      name: kwasm
       region: us-west-2
     managedNodeGroups:
-      - name: ng-wasm-eks
-        ami: ami-0809c110f957a5eb8
+      - name: ng-kwasm
+        ami: ami-0d429719359d44d16
         instanceType: t3.medium
         minSize: 1
         maxSize: 2
         overrideBootstrapCommand: |
           #!/bin/bash
-          /etc/eks/bootstrap.sh wasm-eks --container-runtime containerd' | eksctl create nodegroup -f -
+          /etc/eks/bootstrap.sh kwasm --container-runtime containerd' | eksctl create nodegroup -f -
+    # add cluster to kubeconfig
+    eksctl utils write-kubeconfig --cluster=kwasm  
     ```
 
 === "GCP GKE"
@@ -78,6 +80,12 @@ The following configuration include the instruction to create a fresh cluster in
 === "DO Kubernetes"
     ```bash
     doctl kubernetes cluster create kwasm
+    ```
+
+=== "CIVO"
+    ```bash
+    civo kubernetes create kwasm 
+    civo kubernetes config kwasm --save
     ```
 
 ## WASM Runtime configuration

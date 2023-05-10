@@ -9,6 +9,10 @@ WebAssembly images.
 
 The operator uses the [kwasm-node-installer](https://github.com/KWasm/kwasm-node-installer) project to modify the underlying Kubernetes nodes.
 
+## How it works
+Nigel Poulton describes in his [blog article](https://nigelpoulton.com/webassembly-and-containerd-how-it-works/) in detail what is needed to use containerd Wasm shims with Kubernetes.
+
+
 ## Supported Kubernetes Distributions
 
 ![Support](img/support_matrix.png)
