@@ -1,7 +1,7 @@
 site_name: Kwasm
 theme:
   name: material 
-  logo: assets/logo.png
+  logo: assets/logo.svg
   favicon: assets/favicon.ico
   features:
     - content.tabs.link
