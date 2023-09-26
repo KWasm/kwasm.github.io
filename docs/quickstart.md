@@ -98,8 +98,8 @@ Depending on the wasm runtime you want to use the following configuration needs 
       apiVersion: node.k8s.io/v1
       kind: RuntimeClass
       metadata:
-        name: crun
-      handler: crun
+        name: wasmedge
+      handler: wasmedge
       ---
       apiVersion: batch/v1
       kind: Job
@@ -118,7 +118,7 @@ Depending on the wasm runtime you want to use the following configuration needs 
               name: wasm-test
               resources: {}
             restartPolicy: Never
-            runtimeClassName: crun
+            runtimeClassName: wasmedge
         backoffLimit: 1
 
     ```
