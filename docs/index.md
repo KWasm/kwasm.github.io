@@ -5,7 +5,7 @@ by using a container image that contains binaries and configuration variables ne
 WebAssembly images.
 
 !!! warning
-    This project is mean to be used for **development** or **evaluation** purpose. Your nodes may get damaged!
+    This project is meant to be used for **development** or **evaluation** purpose. Your nodes may get damaged!
 
 The operator uses the [kwasm-node-installer](https://github.com/KWasm/kwasm-node-installer) project to modify the underlying Kubernetes nodes.
 
