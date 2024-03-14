@@ -1,3 +1,6 @@
+!!! warning
+    The KWasm found a new home in the [Spinkube](https://www.spinkube.dev/) project, now developed as [runtime-class-manager](https://github.com/spinkube/runtime-class-manager). This new project is KWasms spiritual successor and is going to support use cases and more.
+
 # Introduction
 
 Kwasm is a Kubernetes Operator that adds WebAssembly support to your Kubernetes nodes. It does so
